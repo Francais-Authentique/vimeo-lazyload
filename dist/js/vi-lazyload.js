@@ -1,17 +1,4 @@
-/*!
- * Vimeo LazyLoad 
- * v2.1.0
- * https://github.com/the-muda-organization/vimeo-lazyload
- * MIT License
- */
-
-(function(){
-    /*
-     * IDEAS FOR THE FUTURE:
-     * - Add data-title attribute to add overlay with title [optional]
-     * - 
-     */
-    
+(function(){    
     /********************************************************************
     ************************** MAIN VARIABLES ***************************
     *********************************************************************/
@@ -26,7 +13,7 @@
         template_iframe,
         
         settings_observer_rootMargin    = '200px 0px',                  //Intersection Observer API option - rootMargin (Y, X)
-        settings_thumb_base_url         = 'https://raw.githubusercontent.com/the-muda-organization/vimeo-lazyload/master/demo-img/',     //Base URL where thumbnails are stored
+      settings_thumb_base_url = 'dy3xg27mc3zlv.cloudfront.net/afa/lp/',     //Base URL where thumbnails are stored
         settings_thumb_extension        = 'webp';                       //Thumbnail extension
         
     
@@ -112,9 +99,6 @@
                     
                     //Unobserve after image lazyloaded
                     vimeo_observer.unobserve(this_element);
-                    
-                    //LOG
-                    //console.log('DONE - ' + this_data_id);
                 }
                 
             });
